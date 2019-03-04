@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "variables";
+
+@import "mixins";
+
+@import "topBar";
+
+@import "banner";
+
+/*运算*/
+@num:5;
+ul{
+  width: 100%*@num;
+  li{
+    width: 100%/@num;
+    color: red+yellow+blue;
+    background: gray*0.3;
+    /*内置函数*/
+    border-color: darken(red,20%);
+  }
+}

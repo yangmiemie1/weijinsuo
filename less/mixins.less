@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*混入*/
+/*组合样式的例子*/
+//.w50{
+//  width: 50%;
+//}
+//.f_left{
+//  float: left;
+//}
+//.f_right{
+//  float: right;
+//}
+/*类混入*/
+//.w50-f_left{
+//  .w50();
+//  .f_left();
+//}
+
+/*函数混入*/
+/*定义函数*/
+.w50(){
+  width: 50%;
+}
+/*定义函数包含参数*/
+//.f_left(){
+//  float: left;
+//}
+//.f_right(){
+//  float: right;
+//}
+/*
+1.定义了参数（没有默认值），调用的时候必须传参
+2.怎么定义默认值 和定义变量值是一样的
+3.定义了参数（有默认值），可传可不传
+*/
+.f(@direction:left){
+  float: @direction;
+}
+.borderRadius(@width:100px){
+  border-radius: @width;
+  -webkit-border-radius:@width;
+  -moz-border-radius:@width;
+  -o-border-radius:@width;
+  -ms-border-radius:@width;
+}
+.w50-f_left{
+  .w50();
+  .f(right);
+  .borderRadius(20px);
+}

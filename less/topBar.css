@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.wjs_app {
+  display: block;
+  /*需要连接的情况：&*/
+}
+.wjs_app img {
+  display: none;
+}
+.wjs_app:hover img {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  border: 1px solid #ccc;
+  border-top: none;
+  top: 40px;
+  z-index: 100000;
+}
+.wjs_app > div {
+  display: block;
+}

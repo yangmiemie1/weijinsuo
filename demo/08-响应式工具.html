@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @media screen and (min-width: 1200px){
+            .box{
+                display: block;
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px){
+            .box{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px){
+            .box{
+                display: block;
+            }
+        }
+        @media screen and (max-width: 768px){
+            .box{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--
+大屏设备    显示
+中屏设备    隐藏
+小屏设备    显示
+超小屏设备  隐藏
+-->
+<div class="box">内容</div>
+</body>
+</html>

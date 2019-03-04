@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1000px;
+            margin: 0 auto;
+            height: 1000px;
+            background: pink;
+        }
+        /*使用媒体查询能针对不同屏幕区间设置不同的布局和样式*/
+        /*怎么使用媒体查询：关于媒体查询 @media */
+        /*语法： @media screen and (max-width: 768px) and (min-width: 320px){属性样式}*/
+
+        @media screen and (max-width: 768px) {
+            /*1. 在超小屏设备的时候 768px以下      当前容器的宽度100%     背景蓝色*/
+            .container{
+                width: 100%;
+                background: blue;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px){
+            /*2. 在小屏设备的时候   768px-992px    当前容器的宽度750px    背景绿色*/
+            .container{
+                width: 750px;
+                background: green;
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px){
+            /*3. 在中屏设备的时候   992px-1200px   当前容器的宽度970px    背景红色*/
+            .container{
+                width: 970px;
+                background: red;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            /*4. 在大屏设备的时候   1200px以上      当前容器的宽度1170px   背景黄色*/
+            .container{
+                width: 1170px;
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--
+响应式容器：
+1. 在超小屏设备的时候 768px以下      当前容器的宽度100%     背景蓝色
+2. 在小屏设备的时候   768px-992px    当前容器的宽度750px    背景绿色
+3. 在中屏设备的时候   992px-1200px   当前容器的宽度970px    背景红色
+4. 在大屏设备的时候   1200px以上      当前容器的宽度1170px   背景黄色
+-->
+<div class="container"></div>
+</body>
+</html>
