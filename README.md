@@ -4,7 +4,7 @@
 
 #### 项目预览
 
-![all](C:\Users\Administrator\Desktop\前端面试作品\移动web\weijinsuo\images\all.jpg)
+![all](https://github.com/yangmiemie1/weijinsuo/blob/master/images/all.jpg)
 
 #### 技术点
 
